@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #674baf;
+  background-position: center top;
+  background-size: 100%;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    text-align: left;
+    padding: 80px;
+  }
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+.fab {
+  color: #fff;
+  font-size: 2em;
+}
+
+.logo {
+  margin-bottom: 4em;
+}
+
+.ilustration {
+  margin-bottom: 4em;
+}
+
+@media (min-width: 1440px) {
+  .ilustration {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-right: 3em;
+  }
+}
+
+.ilustration img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .ilustration img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text {
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 3em;
+  display: inline-block;
+  padding: .75em 3em;
+  border-radius: 50px;
+  color: #674baf;
+  -webkit-box-shadow: 0 0.75em 1em rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.75em 1em rgba(0, 0, 0, 0.4);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (min-width: 1440px) {
+  .social-icons {
+    margin: auto 0 0 auto;
+  }
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$cyan: hsl(179, 62%, 43%);
+$yellow: hsl(71, 73%, 54%);
+$grey: hsl(204, 43%, 93%);
+$blue: hsl(218, 22%, 67%);
+
+$desktop: 1440px;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: $grey;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: .5em;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+hr {
+    width: 100%;
+}
+
+.leading-title {
+    font-size: 2em;
+}
+
+.container {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-component-flex {
+    max-width: 1000px;
+
+    @media(min-width: $desktop) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-flex {
+        padding: 30px 20px;
+
+        @media(min-width: $desktop) {
+            padding: 50px;
+        }
+
+        &:first-of-type {
+            color: $blue;
+            background-color: #fff;
+            border-radius: .5em .5em 0 0;
+
+            @media(min-width: $desktop) {
+                flex: 0 1 100%;
+            }
+
+            h1 {
+                color: $cyan;
+            }
+
+            span {
+                color: $yellow;
+                display: block;
+                margin-bottom: 2em;
+            }
+        }
+
+        &:nth-of-type(2),
+        &:last-of-type {
+            color: #fff;
+
+            @media(min-width: $desktop) {
+                flex: 1;
+            }
+        }
+
+        &:nth-of-type(2) {
+            background-color: $cyan;
+
+            @media(min-width: $desktop) {
+                border-radius: 0 0 0 .5em;
+            }
+            
+            .price {
+                display: flex;
+                align-items: center;
+                color: rgba(255,255,255, 0.7);
+                margin-bottom: 2em;
+
+                span {
+                    font-weight: 700;
+                    font-size: 3em;
+                    margin-right: 20px;
+                    color: #fff;
+                }
+            }
+            
+            button {
+                cursor: pointer;
+                background-color: $yellow;
+                display: inline-block;
+                margin: 0 auto;
+                border: none;
+                font-size: 2em;
+                width: 100%;
+                border-radius: .5em;
+                color: #fff;
+                padding: .5em;
+                text-align: center;
+                transition: background-color .2s;
+                box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+
+                &:hover {
+                    background-color: darken($yellow, 5%);
+                }
+            }
+        }
+
+        &:last-of-type {
+            background-color: lighten($cyan, 5%);
+            border-radius: 0 0 .5em .5em;
+
+            @media(min-width: $desktop) {
+                border-radius: 0 0 .5em 0;
+            }
+        }
+    }
+}
+
+.grid-component-grid {
+    max-width: 1000px;
+    border-radius: .5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+
+    @media(min-width: $desktop) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-flex {
+        padding: 30px 20px;
+
+        @media(min-width: $desktop) {
+            padding: 50px;
+        }
+
+        &:first-of-type {
+            color: $blue;
+            background-color: #fff;
+            border-radius: .5em .5em 0 0;
+
+            @media(min-width: $desktop) {
+                grid-column: 1 / -1;
+            }
+
+            h1 {
+                color: $cyan;
+            }
+
+            span {
+                color: $yellow;
+                display: block;
+                margin-bottom: 2em;
+            }
+        }
+
+        &:nth-of-type(2),
+        &:last-of-type {
+            color: #fff;
+        }
+
+        &:nth-of-type(2) {
+            background-color: $cyan;
+
+            @media(min-width: $desktop) {
+                border-radius: 0 0 0 .5em;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 2em;
+
+                span {
+                    font-weight: 700;
+                    font-size: 3em;
+                    margin-right: 20px;
+                    color: #fff;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                background-color: $yellow;
+                display: inline-block;
+                margin: 0 auto;
+                border: none;
+                font-size: 2em;
+                width: 100%;
+                border-radius: .5em;
+                color: #fff;
+                padding: .5em;
+                text-align: center;
+                transition: background-color .2s;
+                box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+
+                &:hover {
+                    background-color: darken($yellow, 5%);
+                }
+            }
+        }
+
+        &:last-of-type {
+            background-color: lighten($cyan, 5%);
+            border-radius: 0 0 .5em .5em;
+
+            @media(min-width: $desktop) {
+                border-radius: 0 0 .5em 0;
+            }
+        }
+    }
+}

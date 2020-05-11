@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+$color-primary: hsl(257, 40%, 49%);
+
+$desktop: 1440px;
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans',
+    sans-serif;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: $color-primary;
+    background-position: center top;
+    background-size: 100%;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+
+    @media(min-width: $desktop) {
+        background-image: url("./images/bg-desktop.svg");
+        text-align: left;
+        padding: 80px;
+    }
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.fab {
+    color: #fff;
+    font-size: 2em;
+}
+
+.logo {
+    margin-bottom: 4em;
+}
+
+.ilustration {
+    margin-bottom: 4em;
+    @media(min-width: $desktop) {
+        flex: 0 0 50%;
+        margin-right: 3em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+        @media(min-width: $desktop) {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+.text {
+    @media(min-width: $desktop) {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container {
+    @media(min-width: $desktop) {
+        display: flex;
+    }
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 3em;
+    display: inline-block;
+    padding: .75em 3em;
+    border-radius: 50px;
+    color: $color-primary;
+    box-shadow: 0 .75em 1em rgba(0,0,0,0.4);
+    align-self: flex-start;
+}
+
+.social-icons {
+    @media(min-width: $desktop) {
+        margin: auto 0 0 auto;
+    }
+    a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
