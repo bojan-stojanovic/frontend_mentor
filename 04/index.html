@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+ <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1 class="lead-title">Done using flexbox</h1>
+  <div class="card card-flex">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <div class="image">
+      <picture>
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 1440px)" type="image/png">
+        <img src="./images/hero-mobile.jpg" alt="hero">
+      </picture>
+    </div>
+    <div class="text">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <h1>We're <span>coming soon</span></h1>
+      <p> Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="" method="POST" id="form" novalidate>
+        <div class="input-field">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="error icon">
+          <span>Please provide valid email!</span>
+        </div>
+        
+        <button type="submit">
+          <img src="./images/icon-arrow.svg" alt="submit button">
+        </button>
+      </form>
+    </div>
+  </div>
+  
+  <hr>
+  <h1 class="lead-title">Done using grid</h1>
+  <div class="card card-grid">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <div class="image">
+      <picture>
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 1440px)" type="image/png">
+        <img src="./images/hero-mobile.jpg" alt="hero">
+      </picture>
+    </div>
+    <div class="text">
+      <h1>We're <span>coming soon</span></h1>
+      <p> Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="" method="POST" id="form" novalidate>
+        <div class="input-field">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="error icon">
+          <span>Please provide valid email!</span>
+        </div>
+
+        <button type="submit">
+          <img src="./images/icon-arrow.svg" alt="submit button">
+        </button>
+      </form>
+    </div>
+  </div>
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script src="validate.js"></script>
+</body>
+</html>
