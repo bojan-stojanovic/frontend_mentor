@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$d-blue: hsl(249, 10%, 26%);
+$g-blue: hsl(246, 25%, 77%);
+
+$desktop: 1440px;
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $red;
+    background-image: url("images/bg-intro-mobile.png");
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 20px;
+
+    .form-row {
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        img, .error-msg {
+            position: absolute;
+            display: none;
+        }
+
+        img {
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .error-msg {
+            color: $red;
+            text-align: right;
+            width: 100%;
+        }
+
+        &.error {
+            input,
+            ::placeholder {
+                color: $red;
+                border-color: $red;
+            }
+
+            img, .error-msg {
+                display: block;
+            }
+        }
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: .5rem;
+        padding: .75rem .5rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: block;
+        border: 1px solid $g-blue;
+        transition: border-color .2s;
+
+        &:focus {
+            border-color: $blue;
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: $green;
+        width: 100%;
+        border: none;
+        border-radius: .5rem;
+        color: #fff;
+        padding: .75rem .5rem;
+        text-align: center;
+        display: block;
+    }
+
+    span {
+        color: $g-blue;
+    }
+}
+
+.sign-in {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @media(min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.box {
+    color: #fff;
+
+    @media(min-width: $desktop) {
+        flex: 0 1 50%;
+    }
+    >span {
+        color: #fff;
+        background-color: $blue;
+        border-radius: .5rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: .75rem .5rem;
+    }
+}

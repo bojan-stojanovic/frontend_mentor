@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-color: #f6f6fe;
+  text-align: center;
+}
+
+h1, h3 {
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+}
+
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  margin: 0 auto 4em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.switch label {
+  width: 3em;
+  border-radius: 2em;
+  height: 1.6em;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch input {
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.switch input + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  -webkit-transform: translate(115%, 9%);
+          transform: translate(115%, 9%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.switch input:checked + span {
+  -webkit-transform: translate(15%, 9%);
+          transform: translate(15%, 9%);
+}
+
+.pricing-overview {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+@media (min-width: 1440px) {
+  .pricing-overview {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.pricing-overview .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #494c5f;
+  background: #fff;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
+}
+
+@media (min-width: 1440px) {
+  .pricing-overview .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.pricing-overview .card span {
+  border-bottom: 1px solid #f6f6fe;
+  padding: .5em 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pricing-overview .card span.price {
+  font-size: 3em;
+}
+
+.pricing-overview .card span:last-of-type {
+  border-bottom: none;
+  margin-bottom: 1em;
+}
+
+.pricing-overview .card .btn {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  padding: .5em;
+  border-radius: 1em;
+  color: #f6f6fe;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid #6d708d;
+}
+
+.pricing-overview .card .btn:hover {
+  background: #f6f6fe;
+  color: #6d708d;
+}
+
+.pricing-overview .card.highlighted {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  padding: 3em 1em;
+  color: #f6f6fe;
+}
+
+@media (min-width: 1440px) {
+  .pricing-overview .card.highlighted {
+    padding: 4em 1.5em;
+  }
+}
+
+.pricing-overview .card.highlighted span {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.pricing-overview .card.highlighted .btn {
+  background: #f6f6fe;
+  color: #6d708d;
+}
+
+.pricing-overview .card.highlighted .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  color: #f6f6fe;
+  border-color: #f6f6fe;
+}
+/*# sourceMappingURL=main.css.map */

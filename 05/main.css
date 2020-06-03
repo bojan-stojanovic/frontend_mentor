@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff7a7a;
+  background-image: url("images/bg-intro-mobile.png");
+  padding: 20px;
+}
+
+form {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+form .form-row {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+form .form-row img, form .form-row .error-msg {
+  position: absolute;
+  display: none;
+}
+
+form .form-row img {
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+form .form-row .error-msg {
+  color: #ff7a7a;
+  text-align: right;
+  width: 100%;
+}
+
+form .form-row.error input,
+form .form-row.error ::-webkit-input-placeholder {
+  color: #ff7a7a;
+  border-color: #ff7a7a;
+}
+
+form .form-row.error input,
+form .form-row.error :-ms-input-placeholder {
+  color: #ff7a7a;
+  border-color: #ff7a7a;
+}
+
+form .form-row.error input,
+form .form-row.error ::-ms-input-placeholder {
+  color: #ff7a7a;
+  border-color: #ff7a7a;
+}
+
+form .form-row.error input,
+form .form-row.error ::placeholder {
+  color: #ff7a7a;
+  border-color: #ff7a7a;
+}
+
+form .form-row.error img, form .form-row.error .error-msg {
+  display: block;
+}
+
+form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: .5rem;
+  padding: .75rem .5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  border: 1px solid #b9b6d3;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+form input:focus {
+  border-color: #6055a5;
+  outline: none;
+}
+
+form button {
+  background-color: #38cc8c;
+  width: 100%;
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  padding: .75rem .5rem;
+  text-align: center;
+  display: block;
+}
+
+form span {
+  color: #b9b6d3;
+}
+
+.sign-in {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .sign-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.box {
+  color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
+.box > span {
+  color: #fff;
+  background-color: #6055a5;
+  border-radius: .5rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: .75rem .5rem;
+}
+/*# sourceMappingURL=main.css.map */
